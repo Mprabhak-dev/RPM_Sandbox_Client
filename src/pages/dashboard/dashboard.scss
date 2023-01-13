@@ -1,0 +1,113 @@
+.homePage {
+    display       : flex;
+    flex-direction: column;
+
+    .container {
+        display            : flex;
+        flex-direction     : row;
+        padding            : 5px;
+        // background-color: antiquewhite;
+        max-height         : calc(100vh - 50px);
+        overflow-y         : auto;
+
+        li {
+            list-style: none;
+            padding   : 10px;
+            cursor    : pointer;
+
+            &:hover {
+                background-color: rgba(170, 200, 244, 0.291);
+            }
+        }
+
+        .liItemWrapper {
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+
+            .liItem {
+                flex: 1;
+            }
+
+            .navIcon {
+                display: none;
+            }
+        }
+
+        .show {
+            display: block;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .heading {
+            display        : flex;
+            justify-content: center;
+            font-size      : 18px;
+            font-weight    : bold;
+            padding        : 10px 0px;
+            height         : 45px;
+        }
+
+        .sessionInfoHeading {
+            font-size          : 18px;
+            font-weight        : bold;
+            // padding    : 10px 0px 3px 5px;
+            display            : flex;
+            align-items        : center;
+            justify-content    : center;
+            height             : 55px;
+            // background-color: rgb(236, 232, 232);
+        }
+
+        .participantList {
+            flex        : 4;
+            border-right: 1px solid #333;
+
+            ul {
+                max-height: calc(100vh - 105px);
+                overflow-y: auto;
+            }
+
+            .selected {
+                background-color: rgb(170, 200, 244);
+            }
+
+        }
+
+        .sessionList {
+            flex        : 6;
+            border-right: 1px solid #333;
+
+            ul {
+                max-height: calc(100vh - 105px);
+                overflow-y: auto;
+            }
+
+            .selected {
+                background-color: rgb(170, 200, 244);
+            }
+        }
+
+        .sessionInfoWrapper {
+            flex                   : 20;
+            display                : flex;
+            flex-direction         : column;
+            // background-color    : rgb(192, 233, 233);
+            // gap              : 15px;
+            // align-items   : center;
+
+
+            .sessionInfoContainer {
+                margin                  : 10px 20px;
+                border-radius           : 5px;
+                // padding           : 40px;
+                // background-color     : rgb(192, 233, 233);
+                -webkit-box-shadow      : 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                box-shadow              : 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+}
